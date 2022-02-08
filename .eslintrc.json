@@ -1,0 +1,5 @@
+{
+  "parser": "@babel/eslint-parser",
+  "plugins": ["react-native", "prettier"],
+  "extends": ["@callstack", "prettier"]
+}
