@@ -1,13 +1,16 @@
-import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
 import { SafeAreaView } from "react-native";
+import React from "react";
 
-import { CitiesList } from "./src/containers/CitiesList/CitiesList";
+import MainNavigator from "src/containers/Main/MainNavigator";
+
+import { theme } from "src/styles/theme";
 
 const App = () => {
   return (
-    <SafeAreaView>
-      <CitiesList />
-    </SafeAreaView>
+    <NavigationContainer theme={theme}>
+      <MainNavigator />
+    </NavigationContainer>
   );
 };
 
