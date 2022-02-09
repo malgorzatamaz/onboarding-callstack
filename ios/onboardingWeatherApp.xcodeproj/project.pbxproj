@@ -39,6 +39,7 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = onboardingWeatherApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = onboardingWeatherApp/main.m; sourceTree = "<group>"; };
 		3CE8CD4CA8580B4222D3DF93 /* Pods-onboardingWeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onboardingWeatherApp.release.xcconfig"; path = "Target Support Files/Pods-onboardingWeatherApp/Pods-onboardingWeatherApp.release.xcconfig"; sourceTree = "<group>"; };
+		53C1AAD427B3EE5F00C519E3 /* onboardingWeatherApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "onboardingWeatherApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		565080D4073842A5710B32E9 /* Pods-onboardingWeatherApp-onboardingWeatherAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onboardingWeatherApp-onboardingWeatherAppTests.debug.xcconfig"; path = "Target Support Files/Pods-onboardingWeatherApp-onboardingWeatherAppTests/Pods-onboardingWeatherApp-onboardingWeatherAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = onboardingWeatherApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6EC231E666C31DFB2683E4B /* libPods-onboardingWeatherApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-onboardingWeatherApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,7 +115,6 @@
 				565080D4073842A5710B32E9 /* Pods-onboardingWeatherApp-onboardingWeatherAppTests.debug.xcconfig */,
 				054CCDA5B926DDBF2DABE9FB /* Pods-onboardingWeatherApp-onboardingWeatherAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -134,6 +134,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				7D40677FA088E5D7B8606302 /* Pods */,
+				53C1AAD427B3EE5F00C519E3 /* onboardingWeatherApp-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -208,7 +209,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -498,6 +499,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = onboardingWeatherApp;
+				SWIFT_OBJC_BRIDGING_HEADER = "onboardingWeatherApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -523,6 +525,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = onboardingWeatherApp;
+				SWIFT_OBJC_BRIDGING_HEADER = "onboardingWeatherApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
