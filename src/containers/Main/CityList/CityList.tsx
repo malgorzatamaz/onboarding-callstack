@@ -2,7 +2,7 @@ import { Divider, Text } from "react-native-paper";
 import { FlatList } from "react-native";
 import React, { FC } from "react";
 
-import CityItem from "./CityItem";
+import { CityItem } from "./CityItem";
 
 type CityListProps = {
   cities: string[];

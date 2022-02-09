@@ -1,5 +1,3 @@
-import { colors } from "./colors";
-import { spacing } from "./spacing";
-import { theme } from "./theme";
-
-export { colors, spacing, theme };
+export { colors } from "./colors";
+export { spacing } from "./spacing";
+export { theme } from "./theme";
