@@ -1,16 +1,18 @@
 import { NavigationContainer } from "@react-navigation/native";
-import { SafeAreaView } from "react-native";
+import { Provider } from "react-redux";
 import React from "react";
 
-import MainNavigator from "src/containers/Main/MainNavigator";
-
+import { store } from "src/store";
 import { theme } from "src/styles/theme";
+import MainNavigator from "src/containers/Main/MainNavigator";
 
 const App = () => {
   return (
-    <NavigationContainer theme={theme}>
-      <MainNavigator />
-    </NavigationContainer>
+    <Provider store={store}>
+      <NavigationContainer theme={theme}>
+        <MainNavigator />
+      </NavigationContainer>
+    </Provider>
   );
 };
 

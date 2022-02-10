@@ -7,11 +7,19 @@ export default StyleSheet.create({
     alignItems: "flex-start",
     justifyContent: "center",
   },
-  cityName: { color: colors.primary, flex: 1 },
-  itemWrapper: {
-    padding: spacing.lg,
-    backgroundColor: colors.white,
+  cityName: {
+    color: colors.primary,
+    flex: 1,
   },
-  row: { flexDirection: "row", justifyContent: "space-between" },
+  itemWrapper: {
+    backgroundColor: colors.white,
+    height: 60,
+    padding: spacing.lg,
+  },
+  row: {
+    alignItems: "center",
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
   nextIcon: { width: 30, height: 30 },
 });
