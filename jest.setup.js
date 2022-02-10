@@ -1,12 +1,5 @@
 /* eslint-disable no-undef */
-require("jest-fetch-mock").enableMocks();
+import { toBeEmpty, toHaveTextContent } from "@testing-library/jest-native";
+expect.extend({ toBeEmpty, toHaveTextContent });
 
-jest.mock("react-native-paper", () => {
-  return {
-    ActivityIndicator: () => "<ActivityIndicator testID='activityIndicator'/>",
-    Surface: () => "Surface",
-    Text: () => "Text",
-    Badge: () => "Badge",
-    Divider: () => "Divider",
-  };
-});
+require("jest-fetch-mock").enableMocks();

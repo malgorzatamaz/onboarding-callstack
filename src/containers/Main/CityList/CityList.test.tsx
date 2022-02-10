@@ -1,16 +1,10 @@
-import { getDefaultMiddleware } from "@reduxjs/toolkit";
 import { NavigationContainer } from "@react-navigation/native";
-import { Provider } from "react-redux";
-import { render } from "@testing-library/react-native";
-import createMockStore from "redux-mock-store";
+import { render, fireEvent } from "@testing-library/react-native";
 import React from "react";
 
-const middlewares = getDefaultMiddleware();
-const mockStore = createMockStore(middlewares);
-const store = mockStore();
-
-import * as hooks from "src/api/weatherApi";
+import { MockedProvider } from "src/mocks/MockedProvider";
 import { weatherMocks } from "src/mocks/weatherMocks";
+import * as hooks from "src/api/weatherApi";
 import { CityList } from "./";
 
 jest.spyOn(hooks, "useGetWeatherByCityQuery").mockReturnValue({
@@ -19,14 +13,24 @@ jest.spyOn(hooks, "useGetWeatherByCityQuery").mockReturnValue({
   isLoading: false,
   refetch: jest.fn(),
 });
+const mockedNavigate = jest.fn();
+
+jest.mock("@react-navigation/native", () => {
+  return {
+    ...jest.requireActual("@react-navigation/native"),
+    useNavigation: () => ({
+      navigate: mockedNavigate,
+    }),
+  };
+});
 
 test("should render weather details", async () => {
   const { getByText, queryAllByText, toJSON } = render(
-    <Provider store={store}>
+    <MockedProvider>
       <NavigationContainer>
         <CityList />
       </NavigationContainer>
-    </Provider>
+    </MockedProvider>
   );
 
   expect(toJSON()).toMatchSnapshot();
@@ -34,4 +38,19 @@ test("should render weather details", async () => {
   expect(getByText("Wrocław")).toBeTruthy();
   expect(getByText("Żywiec")).toBeTruthy();
   expect(queryAllByText("15 °C")).toHaveLength(3);
+});
+
+test("should navigate to weather details", () => {
+  const { queryAllByTestId } = render(
+    <MockedProvider>
+      <NavigationContainer>
+        <CityList />
+      </NavigationContainer>
+    </MockedProvider>
+  );
+
+  fireEvent.press(queryAllByTestId("cityRow")[0]);
+  expect(mockedNavigate).toHaveBeenCalledWith("CityDetails", {
+    city: "Warszawa",
+  });
 });

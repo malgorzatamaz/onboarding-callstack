@@ -1,16 +1,10 @@
-/* eslint-disable import/no-unresolved */
-import { getDefaultMiddleware } from "@reduxjs/toolkit";
-import { Provider } from "react-redux";
 import { render } from "@testing-library/react-native";
-import createMockStore from "redux-mock-store";
 import React from "react";
 
-const middlewares = getDefaultMiddleware();
-const mockStore = createMockStore(middlewares);
-const store = mockStore();
-
 import * as hooks from "src/api/weatherApi";
+import { MockedProvider } from "src/mocks/MockedProvider";
 import { weatherMocks } from "src/mocks/weatherMocks";
+
 import { CityDetails } from "./";
 
 jest.spyOn(hooks, "useGetWeatherByCityQuery").mockReturnValue({
@@ -20,12 +14,17 @@ jest.spyOn(hooks, "useGetWeatherByCityQuery").mockReturnValue({
   refetch: jest.fn(),
 });
 
+jest.mock("@react-navigation/native", () => ({
+  useRoute: jest.fn(() => ({
+    params: { city: "Warszawa" },
+  })),
+}));
+
 test("should render weather details", async () => {
-  const route = { params: { city: "Warszawa" } };
   const { getByText, getByTestId, toJSON } = render(
-    <Provider store={store}>
-      <CityDetails route={route} />
-    </Provider>
+    <MockedProvider>
+      <CityDetails />
+    </MockedProvider>
   );
 
   expect(toJSON()).toMatchSnapshot();

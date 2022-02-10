@@ -2,7 +2,12 @@
 
 exports[`should render weather details 1`] = `
 <RCTScrollView
-  ItemSeparatorComponent={[Function]}
+  ItemSeparatorComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "render": [Function],
+    }
+  }
   data={
     Array [
       "Warszawa",
@@ -49,6 +54,7 @@ exports[`should render weather details 1`] = `
             "padding": 16,
           }
         }
+        testID="cityRow"
       >
         <View
           style={
@@ -77,9 +83,34 @@ exports[`should render weather details 1`] = `
               }
             }
           >
-            Badge
+            <Text
+              collapsable={false}
+              numberOfLines={1}
+              style={
+                Object {
+                  "alignSelf": "flex-end",
+                  "backgroundColor": "#f50057",
+                  "borderRadius": 10,
+                  "color": "#ffffff",
+                  "fontFamily": "System",
+                  "fontSize": 10,
+                  "fontWeight": "400",
+                  "height": 20,
+                  "lineHeight": 20,
+                  "minWidth": 20,
+                  "opacity": 1,
+                  "overflow": "hidden",
+                  "paddingHorizontal": 4,
+                  "textAlign": "center",
+                  "textAlignVertical": "center",
+                }
+              }
+            >
+              15 °C
+            </Text>
           </View>
           <Image
+            accessibilityIgnoresInvertColors={true}
             source={
               Object {
                 "testUri": "../../../src/assets/next.png",
@@ -94,7 +125,20 @@ exports[`should render weather details 1`] = `
           />
         </View>
       </View>
-      Divider
+      <View
+        highlighted={false}
+        leadingItem="Warszawa"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "rgba(0, 0, 0, 0.12)",
+              "height": 0.5,
+            },
+            undefined,
+            undefined,
+          ]
+        }
+      />
     </View>
     <View
       onLayout={[Function]}
@@ -118,6 +162,7 @@ exports[`should render weather details 1`] = `
             "padding": 16,
           }
         }
+        testID="cityRow"
       >
         <View
           style={
@@ -146,9 +191,34 @@ exports[`should render weather details 1`] = `
               }
             }
           >
-            Badge
+            <Text
+              collapsable={false}
+              numberOfLines={1}
+              style={
+                Object {
+                  "alignSelf": "flex-end",
+                  "backgroundColor": "#f50057",
+                  "borderRadius": 10,
+                  "color": "#ffffff",
+                  "fontFamily": "System",
+                  "fontSize": 10,
+                  "fontWeight": "400",
+                  "height": 20,
+                  "lineHeight": 20,
+                  "minWidth": 20,
+                  "opacity": 1,
+                  "overflow": "hidden",
+                  "paddingHorizontal": 4,
+                  "textAlign": "center",
+                  "textAlignVertical": "center",
+                }
+              }
+            >
+              15 °C
+            </Text>
           </View>
           <Image
+            accessibilityIgnoresInvertColors={true}
             source={
               Object {
                 "testUri": "../../../src/assets/next.png",
@@ -163,7 +233,20 @@ exports[`should render weather details 1`] = `
           />
         </View>
       </View>
-      Divider
+      <View
+        highlighted={false}
+        leadingItem="Wrocław"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "rgba(0, 0, 0, 0.12)",
+              "height": 0.5,
+            },
+            undefined,
+            undefined,
+          ]
+        }
+      />
     </View>
     <View
       onLayout={[Function]}
@@ -187,6 +270,7 @@ exports[`should render weather details 1`] = `
             "padding": 16,
           }
         }
+        testID="cityRow"
       >
         <View
           style={
@@ -215,9 +299,34 @@ exports[`should render weather details 1`] = `
               }
             }
           >
-            Badge
+            <Text
+              collapsable={false}
+              numberOfLines={1}
+              style={
+                Object {
+                  "alignSelf": "flex-end",
+                  "backgroundColor": "#f50057",
+                  "borderRadius": 10,
+                  "color": "#ffffff",
+                  "fontFamily": "System",
+                  "fontSize": 10,
+                  "fontWeight": "400",
+                  "height": 20,
+                  "lineHeight": 20,
+                  "minWidth": 20,
+                  "opacity": 1,
+                  "overflow": "hidden",
+                  "paddingHorizontal": 4,
+                  "textAlign": "center",
+                  "textAlignVertical": "center",
+                }
+              }
+            >
+              15 °C
+            </Text>
           </View>
           <Image
+            accessibilityIgnoresInvertColors={true}
             source={
               Object {
                 "testUri": "../../../src/assets/next.png",

@@ -26,6 +26,7 @@ export const CityItem: FC<CityItemProps> = ({ city }) => {
 
   return (
     <TouchableHighlight
+      testID="cityRow"
       accessibilityRole="button"
       style={styles.itemWrapper}
       underlayColor={colors.secondary}
@@ -38,13 +39,18 @@ export const CityItem: FC<CityItemProps> = ({ city }) => {
         ) : (
           <View style={styles.badgeWrapper}>
             <Badge>
-              {error ? "Something went wrong" : `${data?.temperature} °C`}
+              {error
+                ? "Something went wrong"
+                : data?.temperature
+                ? `${data!.temperature} °C`
+                : "-"}
             </Badge>
           </View>
         )}
         <Image
           style={styles.nextIcon}
           source={require("src/assets/next.png")}
+          accessibilityIgnoresInvertColors
         />
       </View>
     </TouchableHighlight>

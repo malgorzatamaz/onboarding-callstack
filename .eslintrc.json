@@ -4,6 +4,6 @@
   "extends": ["@callstack", "prettier"],
   "rules": {
     // workaround - it costs me too much time to fix :(
-    "import/no-unresolved": "off"
+    // "import/no-unresolved": "off"
   }
 }

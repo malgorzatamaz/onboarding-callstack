@@ -42,10 +42,46 @@ Array [
         }
       }
     >
-      Badge
+      <Text
+        collapsable={false}
+        numberOfLines={1}
+        style={
+          Object {
+            "alignSelf": "flex-end",
+            "backgroundColor": "#f50057",
+            "borderRadius": 10,
+            "color": "#ffffff",
+            "fontFamily": "System",
+            "fontSize": 10,
+            "fontWeight": "400",
+            "height": 20,
+            "lineHeight": 20,
+            "minWidth": 20,
+            "opacity": 1,
+            "overflow": "hidden",
+            "paddingHorizontal": 4,
+            "textAlign": "center",
+            "textAlignVertical": "center",
+          }
+        }
+        testID="temperature"
+      >
+        15 °C
+      </Text>
     </View>
   </View>,
-  "Divider",
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgba(0, 0, 0, 0.12)",
+          "height": 0.5,
+        },
+        undefined,
+        undefined,
+      ]
+    }
+  />,
   <View
     style={
       Object {
@@ -66,7 +102,18 @@ Array [
       %
     </Text>
   </View>,
-  "Divider",
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgba(0, 0, 0, 0.12)",
+          "height": 0.5,
+        },
+        undefined,
+        undefined,
+      ]
+    }
+  />,
   <View
     style={
       Object {
@@ -87,7 +134,18 @@ Array [
        hPa
     </Text>
   </View>,
-  "Divider",
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgba(0, 0, 0, 0.12)",
+          "height": 0.5,
+        },
+        undefined,
+        undefined,
+      ]
+    }
+  />,
   <View
     style={
       Object {
@@ -108,7 +166,18 @@ Array [
        m/s
     </Text>
   </View>,
-  "Divider",
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgba(0, 0, 0, 0.12)",
+          "height": 0.5,
+        },
+        undefined,
+        undefined,
+      ]
+    }
+  />,
   <View
     style={
       Object {
@@ -129,6 +198,17 @@ Array [
       %
     </Text>
   </View>,
-  "Divider",
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgba(0, 0, 0, 0.12)",
+          "height": 0.5,
+        },
+        undefined,
+        undefined,
+      ]
+    }
+  />,
 ]
 `;
