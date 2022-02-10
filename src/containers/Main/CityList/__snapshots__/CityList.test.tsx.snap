@@ -1,0 +1,238 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render weather details 1`] = `
+<RCTScrollView
+  ItemSeparatorComponent={[Function]}
+  data={
+    Array [
+      "Warszawa",
+      "Wrocław",
+      "Żywiec",
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={Array []}
+  viewabilityConfigCallbackPairs={Array []}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessibilityRole="button"
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#fff",
+            "height": 60,
+            "padding": 16,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#000",
+                "flex": 1,
+              }
+            }
+          >
+            Warszawa
+          </Text>
+          <View
+            style={
+              Object {
+                "alignItems": "flex-start",
+                "justifyContent": "center",
+              }
+            }
+          >
+            Badge
+          </View>
+          <Image
+            source={
+              Object {
+                "testUri": "../../../src/assets/next.png",
+              }
+            }
+            style={
+              Object {
+                "height": 30,
+                "width": 30,
+              }
+            }
+          />
+        </View>
+      </View>
+      Divider
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessibilityRole="button"
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#fff",
+            "height": 60,
+            "padding": 16,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#000",
+                "flex": 1,
+              }
+            }
+          >
+            Wrocław
+          </Text>
+          <View
+            style={
+              Object {
+                "alignItems": "flex-start",
+                "justifyContent": "center",
+              }
+            }
+          >
+            Badge
+          </View>
+          <Image
+            source={
+              Object {
+                "testUri": "../../../src/assets/next.png",
+              }
+            }
+            style={
+              Object {
+                "height": 30,
+                "width": 30,
+              }
+            }
+          />
+        </View>
+      </View>
+      Divider
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessibilityRole="button"
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#fff",
+            "height": 60,
+            "padding": 16,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#000",
+                "flex": 1,
+              }
+            }
+          >
+            Żywiec
+          </Text>
+          <View
+            style={
+              Object {
+                "alignItems": "flex-start",
+                "justifyContent": "center",
+              }
+            }
+          >
+            Badge
+          </View>
+          <Image
+            source={
+              Object {
+                "testUri": "../../../src/assets/next.png",
+              }
+            }
+            style={
+              Object {
+                "height": 30,
+                "width": 30,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

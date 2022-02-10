@@ -1,6 +1,6 @@
-import { ActivityIndicator, Badge, Text } from "react-native-paper";
+import { ActivityIndicator, Badge } from "react-native-paper";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
-import { View } from "react-native";
+import { View, Text } from "react-native";
 import React from "react";
 
 import { ErrorAlert, InfoRow } from "src/components";
@@ -16,6 +16,7 @@ export const CityDetails = ({
   const { data, error, isLoading } = useGetWeatherByCityQuery(city);
 
   if (isLoading) return <ActivityIndicator animating={true} />;
+
   if (error) return <ErrorAlert error={error} />;
 
   return (
@@ -25,25 +26,28 @@ export const CityDetails = ({
           <Text style={styles.cityName}>{city}</Text>
           <Text style={styles.weatherDescription}>{data?.description}</Text>
         </View>
-        <View style={styles.badgeWrapper}>
-          <Badge>{`${data?.temperature} °C`}</Badge>
-        </View>
+
+        {data?.temperature && (
+          <View style={styles.badgeWrapper}>
+            <Badge testID="temperature">{`${data!.temperature} °C`}</Badge>
+          </View>
+        )}
       </InfoRow>
       <InfoRow>
         <Text>Humidity</Text>
-        <Text>{data?.humidity}%</Text>
+        <Text testID="humidity">{data?.humidity}%</Text>
       </InfoRow>
       <InfoRow>
         <Text>Pressure</Text>
-        <Text>{data?.pressure} hPa</Text>
+        <Text testID="pressure">{data?.pressure} hPa</Text>
       </InfoRow>
       <InfoRow>
         <Text>Wind speed</Text>
-        <Text>{data?.windSpeed} m/s</Text>
+        <Text testID="windSpeed">{data?.windSpeed} m/s</Text>
       </InfoRow>
       <InfoRow>
         <Text>Cloud cover</Text>
-        <Text>{data?.cloudCover}%</Text>
+        <Text testID="cloudCover">{data?.cloudCover}%</Text>
       </InfoRow>
     </>
   );

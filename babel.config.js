@@ -12,6 +12,7 @@ module.exports = {
           ".ios.tsx",
           ".android.tsx",
           ".tsx",
+          ".test.tsx",
           ".jsx",
           ".js",
           ".json",
