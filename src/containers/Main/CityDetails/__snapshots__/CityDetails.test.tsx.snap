@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render weather details 1`] = `
+Array [
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "padding": 16,
+      }
+    }
+  >
+    <View>
+      <Text
+        style={
+          Object {
+            "fontWeight": "bold",
+            "marginBottom": 4,
+          }
+        }
+      >
+        Warszawa
+      </Text>
+      <Text
+        style={
+          Object {
+            "textTransform": "capitalize",
+          }
+        }
+      >
+        sunny
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-start",
+          "flex": 1,
+          "justifyContent": "flex-end",
+        }
+      }
+    >
+      <Text
+        collapsable={false}
+        numberOfLines={1}
+        style={
+          Object {
+            "alignSelf": "flex-end",
+            "backgroundColor": "#f50057",
+            "borderRadius": 10,
+            "color": "#ffffff",
+            "fontFamily": "System",
+            "fontSize": 10,
+            "fontWeight": "400",
+            "height": 20,
+            "lineHeight": 20,
+            "minWidth": 20,
+            "opacity": 1,
+            "overflow": "hidden",
+            "paddingHorizontal": 4,
+            "textAlign": "center",
+            "textAlignVertical": "center",
+          }
+        }
+        testID="temperature"
+      >
+        15 °C
+      </Text>
+    </View>
+  </View>,
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgba(0, 0, 0, 0.12)",
+          "height": 0.5,
+        },
+        undefined,
+        undefined,
+      ]
+    }
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "padding": 16,
+      }
+    }
+  >
+    <Text>
+      Humidity
+    </Text>
+    <Text
+      testID="humidity"
+    >
+      60
+      %
+    </Text>
+  </View>,
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgba(0, 0, 0, 0.12)",
+          "height": 0.5,
+        },
+        undefined,
+        undefined,
+      ]
+    }
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "padding": 16,
+      }
+    }
+  >
+    <Text>
+      Pressure
+    </Text>
+    <Text
+      testID="pressure"
+    >
+      1015
+       hPa
+    </Text>
+  </View>,
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgba(0, 0, 0, 0.12)",
+          "height": 0.5,
+        },
+        undefined,
+        undefined,
+      ]
+    }
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "padding": 16,
+      }
+    }
+  >
+    <Text>
+      Wind speed
+    </Text>
+    <Text
+      testID="windSpeed"
+    >
+      3
+       m/s
+    </Text>
+  </View>,
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgba(0, 0, 0, 0.12)",
+          "height": 0.5,
+        },
+        undefined,
+        undefined,
+      ]
+    }
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "padding": 16,
+      }
+    }
+  >
+    <Text>
+      Cloud cover
+    </Text>
+    <Text
+      testID="cloudCover"
+    >
+      75
+      %
+    </Text>
+  </View>,
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgba(0, 0, 0, 0.12)",
+          "height": 0.5,
+        },
+        undefined,
+        undefined,
+      ]
+    }
+  />,
+]
+`;

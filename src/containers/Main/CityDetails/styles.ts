@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-import { spacing, colors } from "src/styles";
+import { spacing } from "src/styles";
 
 export default StyleSheet.create({
   cityName: { fontWeight: "bold", marginBottom: spacing.sm },

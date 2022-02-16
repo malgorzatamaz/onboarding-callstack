@@ -1,0 +1,347 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render weather details 1`] = `
+<RCTScrollView
+  ItemSeparatorComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "render": [Function],
+    }
+  }
+  data={
+    Array [
+      "Warszawa",
+      "Wrocław",
+      "Żywiec",
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={Array []}
+  viewabilityConfigCallbackPairs={Array []}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessibilityRole="button"
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#fff",
+            "height": 60,
+            "padding": 16,
+          }
+        }
+        testID="cityRow"
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#000",
+                "flex": 1,
+              }
+            }
+          >
+            Warszawa
+          </Text>
+          <View
+            style={
+              Object {
+                "alignItems": "flex-start",
+                "justifyContent": "center",
+              }
+            }
+          >
+            <Text
+              collapsable={false}
+              numberOfLines={1}
+              style={
+                Object {
+                  "alignSelf": "flex-end",
+                  "backgroundColor": "#f50057",
+                  "borderRadius": 10,
+                  "color": "#ffffff",
+                  "fontFamily": "System",
+                  "fontSize": 10,
+                  "fontWeight": "400",
+                  "height": 20,
+                  "lineHeight": 20,
+                  "minWidth": 20,
+                  "opacity": 1,
+                  "overflow": "hidden",
+                  "paddingHorizontal": 4,
+                  "textAlign": "center",
+                  "textAlignVertical": "center",
+                }
+              }
+            >
+              15 °C
+            </Text>
+          </View>
+          <Image
+            accessibilityIgnoresInvertColors={true}
+            source={
+              Object {
+                "testUri": "../../../src/assets/next.png",
+              }
+            }
+            style={
+              Object {
+                "height": 30,
+                "width": 30,
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        highlighted={false}
+        leadingItem="Warszawa"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "rgba(0, 0, 0, 0.12)",
+              "height": 0.5,
+            },
+            undefined,
+            undefined,
+          ]
+        }
+      />
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessibilityRole="button"
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#fff",
+            "height": 60,
+            "padding": 16,
+          }
+        }
+        testID="cityRow"
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#000",
+                "flex": 1,
+              }
+            }
+          >
+            Wrocław
+          </Text>
+          <View
+            style={
+              Object {
+                "alignItems": "flex-start",
+                "justifyContent": "center",
+              }
+            }
+          >
+            <Text
+              collapsable={false}
+              numberOfLines={1}
+              style={
+                Object {
+                  "alignSelf": "flex-end",
+                  "backgroundColor": "#f50057",
+                  "borderRadius": 10,
+                  "color": "#ffffff",
+                  "fontFamily": "System",
+                  "fontSize": 10,
+                  "fontWeight": "400",
+                  "height": 20,
+                  "lineHeight": 20,
+                  "minWidth": 20,
+                  "opacity": 1,
+                  "overflow": "hidden",
+                  "paddingHorizontal": 4,
+                  "textAlign": "center",
+                  "textAlignVertical": "center",
+                }
+              }
+            >
+              15 °C
+            </Text>
+          </View>
+          <Image
+            accessibilityIgnoresInvertColors={true}
+            source={
+              Object {
+                "testUri": "../../../src/assets/next.png",
+              }
+            }
+            style={
+              Object {
+                "height": 30,
+                "width": 30,
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        highlighted={false}
+        leadingItem="Wrocław"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "rgba(0, 0, 0, 0.12)",
+              "height": 0.5,
+            },
+            undefined,
+            undefined,
+          ]
+        }
+      />
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessibilityRole="button"
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#fff",
+            "height": 60,
+            "padding": 16,
+          }
+        }
+        testID="cityRow"
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#000",
+                "flex": 1,
+              }
+            }
+          >
+            Żywiec
+          </Text>
+          <View
+            style={
+              Object {
+                "alignItems": "flex-start",
+                "justifyContent": "center",
+              }
+            }
+          >
+            <Text
+              collapsable={false}
+              numberOfLines={1}
+              style={
+                Object {
+                  "alignSelf": "flex-end",
+                  "backgroundColor": "#f50057",
+                  "borderRadius": 10,
+                  "color": "#ffffff",
+                  "fontFamily": "System",
+                  "fontSize": 10,
+                  "fontWeight": "400",
+                  "height": 20,
+                  "lineHeight": 20,
+                  "minWidth": 20,
+                  "opacity": 1,
+                  "overflow": "hidden",
+                  "paddingHorizontal": 4,
+                  "textAlign": "center",
+                  "textAlignVertical": "center",
+                }
+              }
+            >
+              15 °C
+            </Text>
+          </View>
+          <Image
+            accessibilityIgnoresInvertColors={true}
+            source={
+              Object {
+                "testUri": "../../../src/assets/next.png",
+              }
+            }
+            style={
+              Object {
+                "height": 30,
+                "width": 30,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

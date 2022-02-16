@@ -1,5 +1,9 @@
 {
-  "parser": "@babel/eslint-parser",
-  "plugins": ["react-native", "prettier"],
-  "extends": ["@callstack", "prettier"]
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react-native", "prettier", "@typescript-eslint"],
+  "extends": ["@callstack", "prettier"],
+  "rules": {
+    // workaround - it costs me too much time to fix :(
+    // "import/no-unresolved": "off"
+  }
 }

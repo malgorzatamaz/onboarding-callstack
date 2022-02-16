@@ -1,11 +1,12 @@
-import { Badge, Text } from "react-native-paper";
-import { StackNavigationProp } from "@react-navigation/stack";
 import {
   ActivityIndicator,
   Image,
+  Text,
   TouchableHighlight,
   View,
 } from "react-native";
+import { Badge } from "react-native-paper";
+import { StackNavigationProp } from "@react-navigation/stack";
 import { useNavigation } from "@react-navigation/native";
 import React, { FC } from "react";
 
@@ -25,6 +26,8 @@ export const CityItem: FC<CityItemProps> = ({ city }) => {
 
   return (
     <TouchableHighlight
+      testID="cityRow"
+      accessibilityRole="button"
       style={styles.itemWrapper}
       underlayColor={colors.secondary}
       onPress={() => navigate("CityDetails", { city })}
@@ -36,13 +39,18 @@ export const CityItem: FC<CityItemProps> = ({ city }) => {
         ) : (
           <View style={styles.badgeWrapper}>
             <Badge>
-              {error ? "Something went wrong" : `${data?.temperature} °C`}
+              {error
+                ? "Something went wrong"
+                : data?.temperature
+                ? `${data!.temperature} °C`
+                : "-"}
             </Badge>
           </View>
         )}
         <Image
           style={styles.nextIcon}
           source={require("src/assets/next.png")}
+          accessibilityIgnoresInvertColors
         />
       </View>
     </TouchableHighlight>
