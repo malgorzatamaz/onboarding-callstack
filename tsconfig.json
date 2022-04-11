@@ -8,6 +8,7 @@
     "jsx": "react-native",
     "lib": ["es2017"],
     "moduleResolution": "node",
+    "skipLibCheck": true,
     "noEmit": true,
     "strict": true,
     "target": "esnext",
