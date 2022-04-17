@@ -15,6 +15,7 @@ jobs:
         uses: mathieudutour/github-tag-action@v6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          custom_release_rules: <release_type>:<changelog_section>
 
       - name: Create a GitHub release
         uses: ncipollo/release-action@v1
