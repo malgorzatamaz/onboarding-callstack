@@ -9,26 +9,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Automated Version Bump
+        id: version-bump
         uses: phips28/gh-action-bump-version@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          skip-tag: "true"
-
-      - name: Push tag
-        id: tag_version
-        uses: mathieudutour/github-tag-action@v6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          default_bump: false
-          tag_prefix: ""
-          custom_release_rules: |
-            minor:minor:Minor Update,
-            major:major:Major Update,
 
       - name: Create a GitHub release
         uses: ncipollo/release-action@v1
         with:
-          tag: ${{ steps.tag_version.outputs.new_tag }}
-          name: Release ${{ steps.tag_version.outputs.new_tag }}
-          body: ${{ steps.tag_version.outputs.changelog }}
+          tag: ${{ steps.version-bump.outputs.newTag }}
+          name: Release ${{ steps.version-bump.outputs.newTag }}
+          body: ${{ github.event.head_commit.message }}
