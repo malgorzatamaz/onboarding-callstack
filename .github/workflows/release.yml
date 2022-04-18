@@ -1,13 +1,37 @@
-name: Create Release
+name: Bump version
 on:
   push:
-    tags:
-      - "*"
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Create a release
-        uses: elgohr/Github-Release-Action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+      - uses: actions/checkout@v2
+      - name: Push tag
+        id: tag_version
+        uses: mathieudutour/github-tag-action@v6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          custom_release_rules: |
+            bug:patch:Bug Fix,
+            chore:patch:Chore,
+            feat:patch:Feature,
+            perf:patch:Performance,
+            ci:patch:Continuous Integration,
+            docs:patch:Documentation,
+            style:patch:Code Style,
+            refactor:patch:Refactoring,
+            test:patch:Tests,
+            preminor_upd:preminor:Pre Minor Update,
+            minor:minor:Minor Update,
+            major:major:Major Update,
+
+      - name: Create a GitHub release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ steps.tag_version.outputs.new_tag }}
+          name: Release ${{ steps.tag_version.outputs.new_tag }}
+          body: ${{ steps.tag_version.outputs.changelog }}
