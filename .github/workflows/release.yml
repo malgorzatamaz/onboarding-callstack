@@ -16,15 +16,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           custom_release_rules: |
-            bug:patch:Bug Fix,
-            chore:patch:Chore,
-            feat:patch:Feature,
-            perf:patch:Performance,
-            ci:patch:Continuous Integration,
-            docs:patch:Documentation,
-            style:patch:Code Style,
-            refactor:patch:Refactoring,
-            test:patch:Tests,
             preminor_upd:preminor:Pre Minor Update,
             minor:minor:Minor Update,
             major:major:Major Update,
