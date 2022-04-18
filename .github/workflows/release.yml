@@ -1,8 +1,10 @@
-name: Bump version
+name: Releases
+
 on:
   push:
-    branches:
-      - main
+    tags:
+      - "*"
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,16 +12,8 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v2
-      - name: Push tag
-        id: tag_version
-        uses: mathieudutour/github-tag-action@v6.0
+      - uses: ncipollo/release-action@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          custom_release_rules: <release_type>:<changelog_section>
-
-      - name: Create a GitHub release
-        uses: ncipollo/release-action@v1
-        with:
-          tag: ${{ steps.tag_version.outputs.new_tag }}
-          name: Release ${{ steps.tag_version.outputs.new_tag }}
-          body: ${{ steps.tag_version.outputs.changelog }}
+          artifacts: "release.tar.gz,foo/*.txt"
+          bodyFile: "body.md"
+          token: ${{ secrets.GITHUB_TOKEN }}
