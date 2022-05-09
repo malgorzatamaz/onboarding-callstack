@@ -6,13 +6,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: install
+      - name: Install project dependencies
+        run: yarn --prefer-offline
 
-      - uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: test
+      - name: Test
+        run: yarn test
 
-      - uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: verify
+      - name: Lint
+        run: yarn lint
+
+      - name: Typecheck
+        run: yarn typecheck
