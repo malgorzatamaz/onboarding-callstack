@@ -1,0 +1,17 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "ios beta distribution"
+  lane :beta do
+    match(readonly: true)
+    build_app(scheme: "onboardingWeatherApp",
+    export_method: "development",
+    )
+    firebase_app_distribution(
+      app: "1:645714164681:ios:1b87997edc1a6b4f95c618",
+      testers: "malgorzata.mazurek@callstack.com",
+    )
+  end
+end
+
+

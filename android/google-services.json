@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "645714164681",
+    "project_id": "fastlane-betatest",
+    "storage_bucket": "fastlane-betatest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645714164681:android:b2d2273e001a170895c618",
+        "android_client_info": {
+          "package_name": "com.onboardingweatherapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "645714164681-rghah67rbng180gealn030er0thvvsu2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpUJsA6WkpN8OsdUX8bgKaORjLIavTjXw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "645714164681-rghah67rbng180gealn030er0thvvsu2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
